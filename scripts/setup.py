@@ -75,7 +75,7 @@ def main():
                 if member is None:
                     raise RuntimeError(f"Missing package member: {source}")
                 (target / name).write_bytes(member.read())
-        (target / "version.json").write_text(json.dumps({"mermaid": MERMAID_VERSION, "integrity": metadata["dist"]["integrity"]}) + "\n", encoding="utf-8")
+        (target / "version.json").write_text(json.dumps({"mermaid": MERMAID_VERSION, "integrity": metadata["dist"]["integrity"]}) + "\n", encoding="utf-8", newline="\n")
     print("Plan HTML ready. Dependencies are isolated in the skill directory.")
 
 
