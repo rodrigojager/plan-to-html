@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"name\": \"Noise texture overlay\",\n    \"category\": \"texture\",\n    \"difficulty\": \"beginner\",\n    \"description\": \"SVG noise filter adds film grain texture to backgrounds. Stops flat-color surfaces from looking cheap.\",\n    \"css_snippet\": \"\\n/* Add to any background element */\\n.textured::after {\\n  content: '';\\n  position: absolute;\\n  inset: 0;\\n  background-image: url(\\\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\\\");\\n  opacity: 0.15;\\n  pointer-events: none;\\n  mix-blend-mode: overlay;\\n}\",\n    \"when_to_use\": \"Every site. Adds analog warmth and materiality. Especially effective on solid-color hero sections.\",\n    \"visual_effect\": \"Subtle grain that makes digital interfaces feel printed/physical.\",\n    \"recommended_for\": [\n      \"all\"\n    ]\n  }\n]"
+    }
+  ]
+}

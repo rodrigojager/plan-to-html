@@ -1,0 +1,81 @@
+/* Íris. Violeta suave, neutros quentes e painéis em camadas.
+ * Reference: design-inspiration-mcp / superhuman. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan DM", "Plan Inter", sans-serif;
+  --heading-weight: 600;
+  --hero-weight: 600;
+  --hero-tracking: -.045em;
+  --radius: 18px;
+  --radius-md: 12px;
+  --radius-control: 8px;
+  --radius-sm: 5px;
+  --radius-media: 12px;
+}
+html[data-theme="light"] {
+  --bg: #f8f5fa;
+  --surface: #fffdfd;
+  --surface-2: #ede7f0;
+  --text: #33293d;
+  --muted: #695a73;
+  --subtle: #706078;
+  --line: #e0d5e5;
+  --accent: #704197;
+  --accent-soft: #eee3f6;
+  --accent-strong: #542b78;
+  --code-bg: #f0eaf2;
+  --syntax-comment: #695a73;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #f0eaf2;
+  --table-hover: #eee3f6;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: 0 5px 20px #24345208;
+  --panel-bg: linear-gradient(145deg, #fffdfd, color-mix(in srgb, #fffdfd 94%, #eee3f6));
+}
+html[data-theme="dark"] {
+  --bg: #1a1626;
+  --surface: #272035;
+  --surface-2: #362c45;
+  --text: #f2eaf8;
+  --muted: #ccbcd8;
+  --subtle: #c1afcf;
+  --line: #51415f;
+  --accent: #dab9f4;
+  --accent-soft: #49315e;
+  --accent-strong: #efd7ff;
+  --code-bg: #211b2d;
+  --syntax-comment: #ccbcd8;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #211b2d;
+  --table-hover: #49315e;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: 0 5px 24px #0002;
+  --panel-bg: linear-gradient(145deg, #272035, color-mix(in srgb, #272035 94%, #49315e));
+}

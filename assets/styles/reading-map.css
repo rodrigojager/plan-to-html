@@ -1,0 +1,37 @@
+/* Stable card geometry leaves clear horizontal/vertical corridors for connectors. */
+.map-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 16px; margin-bottom: 8px; }
+.map-hint { flex: 1; font-size: 10px; color: var(--muted); margin: 0; }
+.map-reset, .map-more { font: inherit; font-size: 10px; color: var(--accent); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-control); padding: 6px 9px; }
+.map-reset:disabled { color: var(--muted); cursor: default; }
+.map-layout { position: relative; isolation: isolate; padding: 18px; }
+.map-edges { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; overflow: visible; }
+.map-edge path { fill: none; stroke-linejoin: round; stroke-linecap: round; }
+.map-edge .map-edge-halo { stroke: var(--surface); stroke-width: 5.5; }
+.map-edge .map-edge-line { stroke: var(--line); stroke-width: 1.5; }
+.map-edge.active-edge .map-edge-line { stroke: var(--accent); stroke-width: 1.8; }
+.map-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; position: relative; }
+.map-item { min-width: 0; position: relative; }
+.map-unrelated { visibility: hidden; pointer-events: none; }
+.map-node { display: flex; align-items: start; gap: 9px; height: 100%; min-height: 58px; padding: 11px 35px 11px 12px; border: 1px solid var(--line); border-radius: var(--radius-control); background: var(--surface); color: var(--text); font-size: 11px; font-weight: 550; line-height: 1.45; }
+.map-node>span:first-child { color: var(--accent); font: 9px var(--mono); padding-top: 1px; }
+.map-node>span:nth-child(2) { min-width: 0; overflow-wrap: anywhere; }
+.map-node small { display: block; color: var(--muted); font-size: 9px; font-weight: 400; margin-top: 4px; }
+.map-selected .map-node { background: var(--accent-soft); border-color: var(--accent); }
+.map-select { position: absolute; top: 6px; right: 5px; display: grid; place-items: center; width: 25px; height: 25px; padding: 0; border: 1px solid transparent; border-radius: var(--radius-sm); color: var(--muted); background: transparent; }
+.map-select:hover, .map-select:focus-visible, .map-select[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+/* Moving cards would detach their ports; themed color/shadow hovers still apply. */
+#document-map .map-node { transform: none; animation: none; }
+.map-more { display: block; margin: 0; }
+.map-link-list { font-size: 11px; line-height: 1.7; padding-left: 20px; }
+@media (max-width: 760px) {
+  .map-hint { flex-basis: 100%; }
+  .map-layout { padding: 14px 12px; }
+  .map-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px 22px; }
+  .map-node { font-size: 9px; padding: 10px 28px 10px 9px; min-height: 62px; gap: 6px; }
+  .map-node small { font-size: 8px; }
+  .map-select { top: 4px; right: 3px; width: 22px; height: 22px; }
+}
+@media print {
+  .map-tools, .map-select, .map-more, .map-edges { display: none !important; }
+  .map-unrelated { visibility: visible; }
+}

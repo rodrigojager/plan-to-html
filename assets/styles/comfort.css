@@ -1,0 +1,77 @@
+/* Comfort */
+.brand {
+  font-size: 14px;
+}
+.search-trigger {
+  font-size: 12px;
+}
+.doc-link {
+  font-size: 12px;
+}
+.doc-link small {
+  font-size: 10px;
+}
+.nav-label,.reading-time {
+  font-size: 10px;
+}
+.hero-label {
+  font-size: 11px;
+}
+.start-link {
+  font-size: 12px;
+}
+.hero-readtime,.stat span {
+  font-size: 11px;
+}
+.document-meta,.source-label,.source-label code {
+  font-size: 10px;
+}
+.prose {
+  font-size: 15px;
+  line-height: 1.85;
+}
+.prose h2 {
+  font-size: 23px;
+}
+.prose h3 {
+  font-size: 18px;
+}
+.prose h4 {
+  font-size: 16px;
+}
+.prose blockquote {
+  font-size: 14px;
+}
+.prose table {
+  font-size: 12px;
+}
+.prose th {
+  font-size: 11px;
+}
+.prose pre {
+  font-size: 12px;
+}
+.code-toolbar,.copy-code {
+  font-size: 10px;
+}
+#toc a {
+  font-size: 11px;
+}
+#toc a.toc-deep {
+  font-size: 10px;
+}
+.section-heading p {
+  font-size: 11px;
+}
+.reference-image figcaption,.image-caption {
+  font-size: 11px;
+}
+.chart-row,.timeline a {
+  font-size: 13px;
+}
+.timeline p {
+  font-size: 12px;
+}
+.source-chip,.visual-sources {
+  font-size: 10px;
+}

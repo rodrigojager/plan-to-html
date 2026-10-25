@@ -1,0 +1,73 @@
+/* Terminal. Monoespaçada, contornos precisos e seleção sólida, sem animações.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+:root {
+  --font: "Plan Mono", monospace;
+  --font-heading: "Plan Mono", monospace;
+  --font-reading: "Plan Inter", sans-serif;
+  --hero-weight: 600;
+  --heading-weight: 600;
+  --hero-tracking: -.045em;
+  --heading-tracking: -.03em;
+  --hero-scale: .87;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-control: 0px;
+  --radius-sm: 0px;
+  --radius-media: 0px;
+  --small-label-font: var(--mono);
+  --hero-rule: 1px solid var(--accent);
+  --hero-ornament-space: 16px;
+  --selected-border: var(--accent);
+  --selected-marker-opacity: 1;
+  --hover-bg: var(--accent-soft);
+  --hover-border: var(--accent);
+  --duration: 0ms;
+  --scroll-behavior: auto;
+}
+html[data-theme="light"] {
+  --bg: #f0f7ee;
+  --surface: #f9fdf6;
+  --surface-2: #e0edda;
+  --text: #1c311d;
+  --muted: #435c40;
+  --subtle: #50684b;
+  --line: #b1c7a6;
+  --accent: #245a2b;
+  --accent-soft: #dcebd5;
+  --accent-strong: #103d15;
+  --code-bg: #e5efdf;
+  --syntax-comment: #435c40;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #e5efdf;
+  --table-hover: #dcebd5;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #0b140e;
+  --surface: #121f15;
+  --surface-2: #1c3020;
+  --text: #e1f4d9;
+  --muted: #abc9a2;
+  --subtle: #9dbb92;
+  --line: #345638;
+  --accent: #a5e599;
+  --accent-soft: #28432b;
+  --accent-strong: #d3ffc4;
+  --code-bg: #0e1a11;
+  --syntax-comment: #abc9a2;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #0e1a11;
+  --table-hover: #28432b;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

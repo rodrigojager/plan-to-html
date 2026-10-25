@@ -1,0 +1,115 @@
+/* Jornal. Masthead serifado, capitulares, filetes duplos e leitura editorial.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Baskerville";
+  src: url("../assets/fonts/libre-baskerville-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Baskerville";
+  src: url("../assets/fonts/libre-baskerville-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Baskerville", Georgia, serif;
+  --font-reading: "Plan Serif", Georgia, serif;
+  --hero-weight: 700;
+  --heading-weight: 700;
+  --hero-case: uppercase;
+  --heading-case: uppercase;
+  --hero-tracking: -.045em;
+  --heading-tracking: -.01em;
+  --hero-scale: .92;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-control: 0px;
+  --radius-sm: 0px;
+  --radius-media: 0px;
+  --hero-rule: 5px double var(--text);
+  --hero-ornament-space: 18px;
+  --panel-border-width: 1px;
+  --panel-border-color: var(--text);
+  --document-top-border: 5px double var(--text);
+  --document-heading-rule: 1px solid var(--text);
+  --document-heading-padding: 18px;
+  --small-label-font: var(--mono);
+  --brand-font: "Plan Baskerville", Georgia, serif;
+  --brand-case: uppercase;
+  --chrome-border: 3px double var(--text);
+  --dropcap-size: 3.4em;
+  --dropcap-line-height: .85;
+  --dropcap-float: left;
+  --dropcap-margin: .1em .12em 0 0;
+  --dropcap-font: "Plan Baskerville", Georgia, serif;
+  --selected-marker-opacity: 1;
+  --selected-border: var(--text);
+  --hover-border: var(--text);
+  --hover-bg: var(--accent-soft);
+  --duration: 0ms;
+  --scroll-behavior: auto;
+}
+html[data-theme="light"] {
+  --bg: #f5f3ee;
+  --surface: #fcfbf7;
+  --surface-2: #e8e5de;
+  --text: #201f1c;
+  --muted: #504e47;
+  --subtle: #5b5850;
+  --line: #a6a196;
+  --accent: #38352d;
+  --accent-soft: #e4e0d5;
+  --accent-strong: #141410;
+  --code-bg: #e9e6df;
+  --syntax-comment: #504e47;
+  --syntax-keyword: #343128;
+  --syntax-string: #343128;
+  --syntax-number: #343128;
+  --syntax-name: #343128;
+  --table-stripe: #e9e6df;
+  --table-hover: #e4e0d5;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #1b1b19;
+  --surface: #262622;
+  --surface-2: #33332d;
+  --text: #f1eee4;
+  --muted: #c4c0b1;
+  --subtle: #b8b2a0;
+  --line: #686559;
+  --accent: #e5ddc5;
+  --accent-soft: #403d31;
+  --accent-strong: #fff5d5;
+  --code-bg: #22221e;
+  --syntax-comment: #c4c0b1;
+  --syntax-keyword: #e5ddc5;
+  --syntax-string: #e5ddc5;
+  --syntax-number: #e5ddc5;
+  --syntax-name: #e5ddc5;
+  --table-stripe: #22221e;
+  --table-hover: #403d31;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

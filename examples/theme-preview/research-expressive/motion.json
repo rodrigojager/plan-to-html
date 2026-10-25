@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"title\": \"Reduced motion — respecting user preferences\",\n  \"wcag_criteria\": [\n    \"2.3.3 Animation from Interactions (AAA)\",\n    \"best practice for AA\"\n  ],\n  \"css_snippet\": \"/* Wrap ALL non-essential animations */\\n@media (prefers-reduced-motion: no-preference) {\\n  .hero-title {\\n    animation: slideUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;\\n  }\\n  .hero-bg {\\n    animation: blobMove 12s ease-in-out infinite;\\n  }\\n  .card {\\n    transition: transform 0.25s ease, box-shadow 0.25s ease;\\n  }\\n}\\n\\n/* If reduced motion IS preferred — give them instant state changes only */\\n@media (prefers-reduced-motion: reduce) {\\n  *, *::before, *::after {\\n    animation-duration: 0.01ms !important;\\n    animation-iteration-count: 1 !important;\\n    transition-duration: 0.01ms !important;\\n    scroll-behavior: auto !important;\\n  }\\n}\",\n  \"js_snippet\": \"// Check in JavaScript too — for requestAnimationFrame loops\\nconst prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;\\n\\nfunction animate() {\\n  if (prefersReducedMotion) {\\n    // Apply final state instantly\\n    element.style.transform = 'translateY(0)';\\n    element.style.opacity = '1';\\n    return;\\n  }\\n  // Run full animation\\n  requestAnimationFrame(animationLoop);\\n}\",\n  \"rules\": [\n    \"Never animate anything that spins/flashes more than 3 times per second (seizure risk)\",\n    \"Parallax scrolling can cause nausea — disable or reduce under prefers-reduced-motion\",\n    \"Autoplay video must have pause controls\",\n    \"Looping animations distract — use animation-iteration-count: 1 by default\"\n  ]\n}"
+    }
+  ]
+}

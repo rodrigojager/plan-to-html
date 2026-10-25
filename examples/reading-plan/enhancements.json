@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "components": [
+    {
+      "id": "entrada-por-grupo",
+      "type": "table-chart",
+      "title": "Os tipos de entrada deste exemplo",
+      "after": "02-conversao.md#tipos-de-entrada",
+      "sources": ["02-conversao.md#tipos-de-entrada"],
+      "table": "02-conversao.md#tipos-de-entrada",
+      "label_column": 0,
+      "value_column": 1,
+      "unit": "tipos listados na tabela"
+    },
+    {
+      "id": "camadas-de-leitura",
+      "type": "timeline",
+      "title": "Ordem de leitura",
+      "after": "overview",
+      "sources": ["PLAN.md#partes"],
+      "items": [
+        {"label": "Leitura e navegação", "detail": "Temas, referências e acessibilidade.", "ref": "01-experiencia.md"},
+        {"label": "Conversão", "detail": "Geração determinística e incrementos visuais.", "ref": "02-conversao.md"},
+        {"label": "Decisões de arquitetura", "detail": "Markdown como fonte, temas e configuração dos visuais.", "ref": "03-decisoes.md"}
+      ]
+    }
+  ]
+}

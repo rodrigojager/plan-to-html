@@ -1,0 +1,80 @@
+/* Jade. Verde sóbrio, tipografia geométrica e superfícies suaves.
+ * Reference: design-inspiration-mcp / mintlify. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan DM", "Plan Inter", sans-serif;
+  --hero-weight: 600;
+  --hero-tracking: -.04em;
+  --radius: 16px;
+  --radius-md: 12px;
+  --radius-control: 8px;
+  --radius-sm: 5px;
+  --radius-media: 12px;
+}
+html[data-theme="light"] {
+  --bg: #f5faf7;
+  --surface: #ffffff;
+  --surface-2: #e7f2eb;
+  --text: #172d24;
+  --muted: #4d6859;
+  --subtle: #596e60;
+  --line: #d1e2d7;
+  --accent: #08633f;
+  --accent-soft: #ddf1e5;
+  --accent-strong: #054b30;
+  --code-bg: #ecf4ef;
+  --syntax-comment: #4d6859;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #ecf4ef;
+  --table-hover: #ddf1e5;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #0d1b15;
+  --surface: #15271e;
+  --surface-2: #20372b;
+  --text: #e6f3eb;
+  --muted: #b2c8ba;
+  --subtle: #9fb8a8;
+  --line: #34513f;
+  --accent: #77e3ae;
+  --accent-soft: #214733;
+  --accent-strong: #b0f4cf;
+  --code-bg: #102118;
+  --syntax-comment: #b2c8ba;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #102118;
+  --table-hover: #214733;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

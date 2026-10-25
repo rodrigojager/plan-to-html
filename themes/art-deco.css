@@ -1,0 +1,101 @@
+/* Art Déco. Molduras geométricas, dourado, títulos espaçados e seleção estática.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Cinzel";
+  src: url("../assets/fonts/cinzel-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Cinzel", Georgia, serif;
+  --font-reading: "Plan Serif", Georgia, serif;
+  --heading-weight: 600;
+  --hero-weight: 600;
+  --hero-case: uppercase;
+  --hero-tracking: .04em;
+  --heading-tracking: .065em;
+  --hero-scale: .92;
+  --radius: 1px;
+  --radius-md: 1px;
+  --radius-control: 0px;
+  --radius-sm: 0px;
+  --radius-media: 1px;
+  --panel-edge-mask: url("resources/deco-frame.svg");
+  --panel-edge-opacity: .9;
+  --panel-border-width: 0px;
+  --hero-ornament: linear-gradient(90deg,transparent,var(--accent),transparent);
+  --hero-ornament-height: 3px;
+  --hero-ornament-space: 18px;
+  --document-top-border: 3px double var(--accent);
+  --document-heading-rule: 3px double var(--line);
+  --document-heading-padding: 17px;
+  --small-label-font: var(--mono);
+  --selected-border: var(--accent);
+  --selected-shadow: inset 3px 0 var(--accent);
+  --hover-border: var(--accent);
+  --hover-bg: var(--accent-soft);
+  --duration: 0ms;
+  --scroll-behavior: auto;
+}
+html[data-theme="light"] {
+  --bg: #f2ede1;
+  --surface: #fcf8ed;
+  --surface-2: #e6dfcd;
+  --text: #29291f;
+  --muted: #5c5947;
+  --subtle: #655f4b;
+  --line: #c2b185;
+  --accent: #66501a;
+  --accent-soft: #e7ddc1;
+  --accent-strong: #49370d;
+  --code-bg: #e8e1cf;
+  --syntax-comment: #5c5947;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #e8e1cf;
+  --table-hover: #e7ddc1;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #101d1c;
+  --surface: #182927;
+  --surface-2: #253a34;
+  --text: #f3ead3;
+  --muted: #c9bf9c;
+  --subtle: #bdb18e;
+  --line: #58664a;
+  --accent: #e4ce8d;
+  --accent-soft: #3c422c;
+  --accent-strong: #fff0b8;
+  --code-bg: #142320;
+  --syntax-comment: #c9bf9c;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #142320;
+  --table-hover: #3c422c;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

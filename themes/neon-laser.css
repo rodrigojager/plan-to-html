@@ -1,0 +1,100 @@
+/* Neon / Laser. Grade, contornos luminosos, laser na seleção e hover iluminado.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Rajdhani";
+  src: url("../assets/fonts/rajdhani-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Rajdhani";
+  src: url("../assets/fonts/rajdhani-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Rajdhani", sans-serif;
+  --hero-weight: 700;
+  --heading-weight: 700;
+  --hero-case: uppercase;
+  --hero-tracking: .015em;
+  --heading-tracking: .02em;
+  --hero-scale: 1.12;
+  --radius: 2px;
+  --radius-md: 2px;
+  --radius-control: 0px;
+  --radius-sm: 1px;
+  --radius-media: 2px;
+  --panel-border-color: var(--accent);
+  --panel-edge-mask: url("resources/deco-frame.svg");
+  --panel-edge-opacity: .18;
+  --selected-marker-opacity: 1;
+  --selected-marker-shadow: 0 0 12px var(--accent);
+  --selected-border: var(--accent);
+  --selected-sheen: linear-gradient(105deg, transparent 35%, var(--accent) 50%,transparent 65%);
+  --selected-sheen-opacity: 1;
+  --selected-sheen-inset: auto 0 0;
+  --selected-sheen-height: 2px;
+  --selected-animation: reader-laser 3.8s linear infinite;
+  --hover-transform: translateY(-2px);
+  --hover-border: var(--accent);
+  --hover-shadow: 0 0 0 1px var(--accent), 0 0 18px color-mix(in srgb,var(--accent) 24%,transparent);
+  --hover-bg: var(--accent-soft);
+  --hero-ornament: linear-gradient(90deg,var(--accent),#ec42cf,transparent);
+  --hero-ornament-height: 2px;
+  --hero-ornament-space: 13px;
+  --page-texture: linear-gradient(90deg, color-mix(in srgb,var(--accent) 5%,transparent) 1px,transparent 1px),linear-gradient(color-mix(in srgb,var(--accent) 5%,transparent) 1px,transparent 1px);
+  --page-texture-size: 36px 36px;
+  --small-label-font: var(--mono);
+}
+html[data-theme="light"] {
+  --bg: #eef8fc;
+  --surface: #faffff;
+  --surface-2: #dfedf3;
+  --text: #102b40;
+  --muted: #395765;
+  --subtle: #456271;
+  --line: #aecbd6;
+  --accent: #005b78;
+  --accent-soft: #d7eef5;
+  --accent-strong: #003d52;
+  --code-bg: #e5f0f4;
+  --syntax-comment: #395765;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #e5f0f4;
+  --table-hover: #d7eef5;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: 0 0 0 1px #005b7810, inset 0 0 22px #35dfff08;
+  --panel-bg: var(--surface);
+  --hero-shadow: none;
+}
+html[data-theme="dark"] {
+  --bg: #050812;
+  --surface: #0c1322;
+  --surface-2: #14263a;
+  --text: #e5fcff;
+  --muted: #adc8d5;
+  --subtle: #a0bacb;
+  --line: #25455c;
+  --accent: #56e8ff;
+  --accent-soft: #173849;
+  --accent-strong: #aeffff;
+  --code-bg: #08101c;
+  --syntax-comment: #adc8d5;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #08101c;
+  --table-hover: #173849;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: 0 0 0 1px #56e8ff18, inset 0 0 26px #19bfff09;
+  --panel-bg: var(--surface);
+  --hero-shadow: 0 0 28px #2ee9ff44, 2px 0 #e54dc829;
+}

@@ -1,0 +1,59 @@
+/* Studio. Contraste alto, títulos fortes e azul vivo.
+ * Reference: design-inspiration-mcp / framer. Adapted for this reader.
+ */
+:root {
+  --hero-weight: 700;
+  --heading-weight: 700;
+  --hero-tracking: -.055em;
+  --radius: 16px;
+  --radius-md: 10px;
+  --radius-control: 14px;
+  --radius-sm: 6px;
+  --radius-media: 10px;
+}
+html[data-theme="light"] {
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --surface-2: #e7edf6;
+  --text: #111f33;
+  --muted: #506079;
+  --subtle: #59687e;
+  --line: #d1dae7;
+  --accent: #0753ab;
+  --accent-soft: #e0ecfb;
+  --accent-strong: #003c80;
+  --code-bg: #eaf0f7;
+  --syntax-comment: #506079;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #eaf0f7;
+  --table-hover: #e0ecfb;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #080c12;
+  --surface: #111925;
+  --surface-2: #1e2b3c;
+  --text: #eef5ff;
+  --muted: #b2c1d8;
+  --subtle: #a2b4cf;
+  --line: #33455e;
+  --accent: #85c8ff;
+  --accent-soft: #203c57;
+  --accent-strong: #b9e0ff;
+  --code-bg: #0b121c;
+  --syntax-comment: #b2c1d8;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #0b121c;
+  --table-hover: #203c57;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

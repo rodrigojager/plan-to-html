@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"name\": \"Retro Grotesque\",\n    \"style\": \"vintage\",\n    \"display_font\": {\n      \"name\": \"Cabinet Grotesk\",\n      \"weights\": \"700;800;900\",\n      \"type\": \"sans-serif\"\n    },\n    \"body_font\": {\n      \"name\": \"Satoshi\",\n      \"weights\": \"400;500\",\n      \"type\": \"sans-serif\"\n    },\n    \"google_import\": \"/* Cabinet Grotesk & Satoshi via Fontshare: */\\n@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&f[]=satoshi@400,500&display=swap');\",\n    \"css_usage\": \"h1 { font-family: 'Cabinet Grotesk', sans-serif; font-weight: 900; letter-spacing: -0.05em; }\\nbody { font-family: 'Satoshi', sans-serif; font-weight: 400; }\",\n    \"character\": \"Retro grotesque revival. Cabinet Grotesk has a distinct ink-trap personality.\",\n    \"style_tags\": [\n      \"vintage\",\n      \"retro\",\n      \"editorial\",\n      \"bold\"\n    ]\n  }\n]"
+    }
+  ]
+}

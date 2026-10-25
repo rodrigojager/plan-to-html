@@ -1,0 +1,59 @@
+/* Polar. Branco e prata, azul discreto e cartões arredondados.
+ * Reference: design-inspiration-mcp / apple. Adapted for this reader.
+ */
+:root {
+  --hero-weight: 600;
+  --heading-weight: 600;
+  --hero-tracking: -.045em;
+  --radius: 26px;
+  --radius-md: 20px;
+  --radius-control: 12px;
+  --radius-sm: 8px;
+  --radius-media: 18px;
+}
+html[data-theme="light"] {
+  --bg: #f5f5f7;
+  --surface: #ffffff;
+  --surface-2: #e9edf2;
+  --text: #202731;
+  --muted: #536171;
+  --subtle: #5e6878;
+  --line: #d5dce4;
+  --accent: #075eab;
+  --accent-soft: #e1edf9;
+  --accent-strong: #034780;
+  --code-bg: #edf0f5;
+  --syntax-comment: #536171;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #edf0f5;
+  --table-hover: #e1edf9;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: 0 5px 20px #24345208;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #111418;
+  --surface: #1c2229;
+  --surface-2: #2a323c;
+  --text: #edf2f9;
+  --muted: #bac7d8;
+  --subtle: #aebdd1;
+  --line: #414d5d;
+  --accent: #9bcbff;
+  --accent-soft: #293f58;
+  --accent-strong: #cce5ff;
+  --code-bg: #151a20;
+  --syntax-comment: #bac7d8;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #151a20;
+  --table-hover: #293f58;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: 0 5px 24px #0002;
+  --panel-bg: var(--surface);
+}

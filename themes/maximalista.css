@@ -1,0 +1,122 @@
+/* Maximalista. Tipografia de pôster, recortes, contornos grossos e sombras deslocadas.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Bebas";
+  src: url("../assets/fonts/bebas-neue-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Bebas", Impact, sans-serif;
+  --font: "Plan DM", sans-serif;
+  --hero-weight: 400;
+  --heading-weight: 400;
+  --hero-case: uppercase;
+  --heading-case: uppercase;
+  --hero-scale: 1.3;
+  --hero-tracking: .01em;
+  --heading-tracking: .025em;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-control: 0px;
+  --radius-sm: 0px;
+  --radius-media: 0px;
+  --panel-border-width: 2px;
+  --panel-border-color: var(--text);
+  --hero-ornament: repeating-linear-gradient(90deg,#c6437422 0 18px,transparent 18px 23px);
+  --hero-ornament-height: 12px;
+  --hero-ornament-space: 18px;
+  --document-border: 2px solid var(--text);
+  --document-top-border: 2px solid var(--text);
+  --document-padding: 30px 28px;
+  --document-padding-mobile: 24px 16px;
+  --document-heading-rule: 3px solid var(--text);
+  --document-heading-padding: 17px;
+  --selected-border: var(--text);
+  --selected-shadow: 4px 4px 0 var(--text);
+  --selected-transform: rotate(-.6deg);
+  --selected-sheen: repeating-linear-gradient(120deg,transparent 0 15px,#ffffff0d 15px 20px);
+  --selected-sheen-opacity: 1;
+  --selected-animation: reader-laser 8s linear infinite;
+  --hover-transform: translate(-3px,-3px);
+  --hover-shadow: 5px 5px 0 var(--text);
+  --hover-border: var(--text);
+  --hover-bg: var(--accent-soft);
+  --press-transform: translate(2px,2px);
+  --duration: 160ms;
+  --page-texture: repeating-linear-gradient(135deg,transparent 0 30px,#9b4f6e06 30px 32px);
+  --page-texture-size: 180px 180px;
+}
+html[data-theme="light"] {
+  --bg: #f7e9d5;
+  --surface: #fff9ed;
+  --surface-2: #ecdfc8;
+  --text: #29232d;
+  --muted: #5b4b53;
+  --subtle: #64515a;
+  --line: #a08383;
+  --accent: #75335c;
+  --accent-soft: #ead5df;
+  --accent-strong: #52203d;
+  --code-bg: #efe2cf;
+  --syntax-comment: #5b4b53;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #efe2cf;
+  --table-hover: #ead5df;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: 6px 6px 0 #302633;
+  --panel-bg: var(--surface);
+  --document-shadow: 6px 6px 0 #302633;
+  --hero-shadow: 3px 3px #dca46255;
+}
+html[data-theme="dark"] {
+  --bg: #241c2a;
+  --surface: #332638;
+  --surface-2: #423148;
+  --text: #faebdc;
+  --muted: #d6bdaa;
+  --subtle: #c9b09e;
+  --line: #8b6c87;
+  --accent: #f4bdca;
+  --accent-soft: #573947;
+  --accent-strong: #ffe0d8;
+  --code-bg: #2b2131;
+  --syntax-comment: #d6bdaa;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #2b2131;
+  --table-hover: #573947;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: 6px 6px 0 #a08794;
+  --panel-bg: var(--surface);
+  --document-shadow: 6px 6px 0 #a08794;
+  --hero-shadow: 3px 3px #a3628755;
+}

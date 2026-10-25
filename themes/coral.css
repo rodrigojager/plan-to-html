@@ -1,0 +1,81 @@
+/* Coral. Cantos amplos, títulos arredondados e acento rosado.
+ * Reference: design-inspiration-mcp / airbnb. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan DM", "Plan Inter", sans-serif;
+  --heading-weight: 700;
+  --hero-weight: 700;
+  --hero-tracking: -.035em;
+  --radius: 24px;
+  --radius-md: 18px;
+  --radius-control: 12px;
+  --radius-sm: 8px;
+  --radius-media: 18px;
+}
+html[data-theme="light"] {
+  --bg: #fff8f8;
+  --surface: #ffffff;
+  --surface-2: #f6eaed;
+  --text: #37242a;
+  --muted: #72575f;
+  --subtle: #775e65;
+  --line: #ead6dc;
+  --accent: #a12a49;
+  --accent-soft: #f9e2e9;
+  --accent-strong: #7c1732;
+  --code-bg: #f6edef;
+  --syntax-comment: #72575f;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #f6edef;
+  --table-hover: #f9e2e9;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: 0 5px 20px #24345208;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #21171c;
+  --surface: #302128;
+  --surface-2: #402d36;
+  --text: #f7e9ed;
+  --muted: #d4b9c2;
+  --subtle: #c7abb5;
+  --line: #5b3e49;
+  --accent: #ffb0c3;
+  --accent-soft: #593042;
+  --accent-strong: #ffd3df;
+  --code-bg: #261b21;
+  --syntax-comment: #d4b9c2;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #261b21;
+  --table-hover: #593042;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: 0 5px 24px #0002;
+  --panel-bg: var(--surface);
+}

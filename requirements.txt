@@ -1,0 +1,7 @@
+markdown-it-py==4.2.0
+mdit-py-plugins==0.6.1
+mdurl==0.1.2
+tinycss2==1.5.1
+webencodings==0.5.1
+Pygments==2.19.2
+pillow==12.2.0

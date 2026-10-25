@@ -1,0 +1,63 @@
+/* Optional appearance hooks. No theme-dependent DOM, content conversion, or controls. */
+:root {
+  --font-heading: var(--font);
+  --font-reading: var(--font);
+  --heading-weight: 600;
+  --hero-weight: 650;
+  --heading-tracking: -.025em;
+  --hero-tracking: -.055em;
+  --heading-line-height: 1.35;
+  --hero-line-height: 1.13;
+  --radius-sm: 7px;
+  --radius-md: 11px;
+  --radius-control: 9px;
+  --radius-media: 11px;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+  --chrome-bg: var(--bg);
+  --nav-bg: var(--bg);
+  --page-texture: none;
+  --quote-border-width: 3px;
+}
+body { background-image: var(--page-texture); background-size: var(--page-texture-size, auto); }
+.topbar { background: var(--chrome-bg); }
+.sidebar { background: var(--nav-bg); }
+.prose { font-family: var(--font-reading); }
+.hero h1,
+.document-header h2,
+.prose :is(h1,h2,h3,h4,h5,h6),
+.visual-heading h3,
+.section-heading h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+  line-height: var(--heading-line-height);
+}
+.hero h1 {
+  font-weight: var(--hero-weight);
+  letter-spacing: var(--hero-tracking);
+  line-height: var(--hero-line-height);
+}
+.prose h1.source-title { line-height: 0; }
+.panel, .enhancement, .stats, .gallery-card {
+  background: var(--panel-bg);
+  box-shadow: var(--panel-shadow);
+}
+.panel, .enhancement { border-radius: var(--radius); }
+.stats, .gallery-card, .code-block, .table-wrap, .diagram-viewer, .map-node {
+  border-radius: var(--radius-md);
+}
+.icon-button, .search-trigger, .doc-link, .code-actions button,
+.diagram-toolbar button, .reading-controls select, #reading-reset {
+  border-radius: var(--radius-control);
+}
+.kind, .source-chip, .step-number, .source-label code,
+.prose code, .prose details, .heading-anchor {
+  border-radius: var(--radius-sm);
+}
+.reference-image img, .inline-image img { border-radius: var(--radius-media); }
+.prose blockquote {
+  border-left-width: var(--quote-border-width);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+dialog { border-radius: var(--radius); }

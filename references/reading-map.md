@@ -1,0 +1,15 @@
+# Reading map behavior
+
+The automatic map represents explicit Markdown links. A visible neighbor has a direct link in either direction with the selected document; a neighbor's other connections do not enter the selected neighborhood. No AI classification or inferred architecture is involved.
+
+- Hover or keyboard focus shows only that document, its direct neighbors, and its incident connections. Unrelated cards use `visibility: hidden`, preserving their cells so selection never rearranges the map. Hidden cards are excluded from keyboard and accessibility navigation by CSS visibility.
+- Each card has a separate pin button for click/touch. Pinning preserves the selection after the pointer leaves and expands the map to include its related documents. Title links still open their original document. Escape or "Show all" clears the selection.
+- Maps with more than nine documents or eighteen unique document pairs draw connections only while focused. Their overview remains a document grid. The expand/collapse control retains access to every document.
+- Reciprocal links share a connector with arrowheads at both ends. The payload retains the original directed edges.
+- The SVG connection layer is in front of the cards and ignores pointer input. Orthogonal routes use the horizontal and vertical gutters, separate ports and bounded lanes. A contrasting halo separates crossing connectors. Never raise straight/curved lines over text as a substitute for routing around it.
+- Every route is checked against the card rectangles. If an unusual custom layout leaves no safe route, that connection appears as an explicit linked pair below the map. It must not disappear or cross a card. Shared connectors or crossings in gutters are allowed; box/text intersections are not.
+- Selection and routing remain local and deterministic. No service, CDN, model, graph layout dependency, or runtime Markdown interpretation is required. Source prose and relationships are preserved.
+
+Implementation is split between `assets/reading-map.js` (focus, pins, geometric routing and SVG) and `assets/styles/reading-map.css` (grid, corridors, controls and stacking). `reader.js` mounts it; the Python renderer includes its script whenever a plan has multiple documents. Fonts, reading layout changes and viewport resizing trigger a redraw. Themes provide their existing palette/radius/shadow variables. Map cards keep fixed geometry during hover so animated theme transforms cannot detach their connection ports; themed colors and shadows still apply.
+
+When changing this component, inspect a dense map with long titles. Verify an isolated document, reciprocal edges, incoming-only and outgoing-only links, direct versus second-degree neighbors, hover exit, keyboard focus/Escape, pin/reset, expansion, touch and a narrow viewport. Confirm every connector avoids every card, including cards hidden by the active selection, and that the SVG layer cannot intercept links or buttons. Test a relocated standalone file with network requests blocked, both color modes and reduced motion. `python scripts/check_reading_map.py` exercises these cases using temporary Markdown fixtures.

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"name\": \"Brutalist box shadow stacking\",\n    \"category\": \"brutalism\",\n    \"difficulty\": \"beginner\",\n    \"description\": \"Thick offset box shadows (no blur) that create a raw, printed feel. Strong directional light simulation.\",\n    \"css_snippet\": \"\\n.brutalist-card {\\n  border: 2px solid #000000;\\n  box-shadow: 4px 4px 0 #000000;\\n  transition: box-shadow 0.15s ease, transform 0.15s ease;\\n}\\n.brutalist-card:hover {\\n  box-shadow: 8px 8px 0 #000000;\\n  transform: translate(-4px, -4px);\\n}\\n.brutalist-btn {\\n  border: 2px solid #000;\\n  box-shadow: 3px 3px 0 #000;\\n  background: #FFE600;\\n  font-weight: 800;\\n  text-transform: uppercase;\\n}\\n.brutalist-btn:active {\\n  box-shadow: 0 0 0 #000;\\n  transform: translate(3px, 3px);\\n}\",\n    \"when_to_use\": \"Newsletters, indie projects, unconventional brands, anything that wants to feel raw and honest.\",\n    \"visual_effect\": \"Bold graphic novel aesthetic — feels designed by hand, not by algorithm.\",\n    \"recommended_for\": [\n      \"creative\",\n      \"editorial\"\n    ]\n  }\n]"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+/* Minimalista. Sem cartões elevados ou animações; seleção por filete e contraste.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan DM", sans-serif;
+  --hero-weight: 400;
+  --heading-weight: 400;
+  --hero-tracking: -.045em;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-control: 0px;
+  --radius-sm: 0px;
+  --radius-media: 0px;
+  --panel-border-width: 0px;
+  --panel-bg: var(--bg);
+  --selected-bg: transparent;
+  --selected-border: transparent;
+  --selected-marker-opacity: 1;
+  --selected-marker-width: 2px;
+  --hover-bg: transparent;
+  --hover-border: transparent;
+  --duration: 0ms;
+  --scroll-behavior: auto;
+  --document-top-border: 1px solid var(--line);
+}
+html[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #eeeeee;
+  --text: #1b1b1b;
+  --muted: #555555;
+  --subtle: #626262;
+  --line: #dddddd;
+  --accent: #282828;
+  --accent-soft: #ececec;
+  --accent-strong: #000000;
+  --code-bg: #f2f2f2;
+  --syntax-comment: #555555;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #f2f2f2;
+  --table-hover: #ececec;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #111111;
+  --surface: #111111;
+  --surface-2: #252525;
+  --text: #eeeeee;
+  --muted: #bdbdbd;
+  --subtle: #aeaeae;
+  --line: #353535;
+  --accent: #eeeeee;
+  --accent-soft: #292929;
+  --accent-strong: #ffffff;
+  --code-bg: #1b1b1b;
+  --syntax-comment: #bdbdbd;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #1b1b1b;
+  --table-hover: #292929;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

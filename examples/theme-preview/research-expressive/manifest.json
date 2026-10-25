@@ -1,0 +1,88 @@
+{
+  "repository": "https://github.com/notsointresting/design-inspiration-mcp",
+  "commit": "817716d983513147cc06611c3e4d6073f912e93f",
+  "tool_count": 28,
+  "calls": [
+    {
+      "id": "neon",
+      "tool": "get_color_palettes",
+      "arguments": {
+        "mood": "neon cyberpunk",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 1845
+    },
+    {
+      "id": "earth",
+      "tool": "get_color_palettes",
+      "arguments": {
+        "mood": "earthy organic",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 967
+    },
+    {
+      "id": "vintage-type",
+      "tool": "get_typography_pairings",
+      "arguments": {
+        "style": "vintage",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 845
+    },
+    {
+      "id": "playful-type",
+      "tool": "get_typography_pairings",
+      "arguments": {
+        "style": "playful",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 785
+    },
+    {
+      "id": "brutalism",
+      "tool": "get_design_skills",
+      "arguments": {
+        "category": "brutalism",
+        "difficulty": "all"
+      },
+      "isError": false,
+      "characters": 1036
+    },
+    {
+      "id": "texture",
+      "tool": "get_design_skills",
+      "arguments": {
+        "category": "texture",
+        "difficulty": "all"
+      },
+      "isError": false,
+      "characters": 1075
+    },
+    {
+      "id": "interaction",
+      "tool": "get_animation_library",
+      "arguments": {
+        "category": "interaction",
+        "trigger": "any",
+        "difficulty": "all"
+      },
+      "isError": false,
+      "characters": 3937
+    },
+    {
+      "id": "motion",
+      "tool": "get_accessibility_guide",
+      "arguments": {
+        "component": "motion",
+        "level": "AA"
+      },
+      "isError": false,
+      "characters": 1609
+    }
+  ]
+}

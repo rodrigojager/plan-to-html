@@ -1,0 +1,76 @@
+/* Papel. Títulos serifados, tons quentes e textura discreta.
+ * Reference: design-inspiration-mcp / claude. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Serif", Georgia, serif;
+  --hero-weight: 600;
+  --hero-tracking: -.035em;
+  --heading-tracking: -.02em;
+  --radius: 8px;
+  --radius-md: 6px;
+  --radius-control: 5px;
+  --radius-sm: 3px;
+  --radius-media: 6px;
+  --page-texture: radial-gradient(#73654b0b .6px, transparent .6px);
+  --page-texture-size: 4px 4px;
+}
+html[data-theme="light"] {
+  --bg: #f5f3ec;
+  --surface: #fdfbf7;
+  --surface-2: #ece8de;
+  --text: #29261f;
+  --muted: #625c50;
+  --subtle: #6b6357;
+  --line: #dcd6c9;
+  --accent: #964329;
+  --accent-soft: #f2e3d9;
+  --accent-strong: #71331f;
+  --code-bg: #eeebe3;
+  --syntax-comment: #625c50;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #eeebe3;
+  --table-hover: #f2e3d9;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #1c1b17;
+  --surface: #25231e;
+  --surface-2: #302c25;
+  --text: #eee8db;
+  --muted: #c0b8a6;
+  --subtle: #bab09c;
+  --line: #494235;
+  --accent: #e8ad89;
+  --accent-soft: #423025;
+  --accent-strong: #f7c5a8;
+  --code-bg: #201f1a;
+  --syntax-comment: #c0b8a6;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #201f1a;
+  --table-hover: #423025;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

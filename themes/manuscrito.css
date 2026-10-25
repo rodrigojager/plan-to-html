@@ -1,0 +1,113 @@
+/* Manuscrito. Caligrafia, papel pautado, bordas desenhadas e marcador estático.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Caveat";
+  src: url("../assets/fonts/caveat-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Caveat";
+  src: url("../assets/fonts/caveat-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Kalam";
+  src: url("../assets/fonts/kalam-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Kalam";
+  src: url("../assets/fonts/kalam-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Caveat", cursive;
+  --font-reading: "Plan Kalam", cursive;
+  --hero-weight: 700;
+  --hero-tracking: -.025em;
+  --heading-weight: 700;
+  --heading-tracking: 0;
+  --hero-scale: 1.1;
+  --radius: 9px 3px 12px 5px;
+  --radius-md: 3px 8px 5px 9px;
+  --radius-control: 4px 8px 3px 7px;
+  --radius-sm: 3px;
+  --radius-media: 6px;
+  --panel-edge-mask: url("resources/sketch-frame.svg");
+  --panel-edge-opacity: .55;
+  --panel-border-width: 0px;
+  --document-border: 1px solid var(--line);
+  --document-top-border: 1px solid var(--line);
+  --document-padding: 28px 26px;
+  --document-padding-mobile: 24px 15px;
+  --document-radius: 4px 8px 5px 10px;
+  --document-shadow: 3px 4px 0 color-mix(in srgb,var(--line) 40%,transparent);
+  --hero-ornament: var(--accent);
+  --hero-ornament-mask: url("resources/brush.svg");
+  --hero-ornament-height: 5px;
+  --hero-ornament-space: 10px;
+  --selected-radius: 5px 12px 3px 8px;
+  --selected-transform: rotate(-.45deg);
+  --selected-border: transparent;
+  --hover-bg: var(--accent-soft);
+  --hover-border: var(--accent);
+  --duration: 0ms;
+  --scroll-behavior: auto;
+}
+html[data-theme="light"] {
+  --bg: #f6f1e7;
+  --surface: #fffdf6;
+  --surface-2: #eee9dc;
+  --text: #302d25;
+  --muted: #605948;
+  --subtle: #6a614f;
+  --line: #d5cbb5;
+  --accent: #654916;
+  --accent-soft: #ece1c8;
+  --accent-strong: #49340f;
+  --code-bg: #f0ebdd;
+  --syntax-comment: #605948;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #f0ebdd;
+  --table-hover: #ece1c8;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+  --document-bg: repeating-linear-gradient(transparent 0 29px,#336aa413 29px 30px),linear-gradient(90deg,transparent 17px,#be47371d 17px 18px,transparent 18px),var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #211f19;
+  --surface: #2d2a22;
+  --surface-2: #383428;
+  --text: #f3edde;
+  --muted: #c5bca4;
+  --subtle: #baaf95;
+  --line: #55503d;
+  --accent: #e8c788;
+  --accent-soft: #493d26;
+  --accent-strong: #ffe2ad;
+  --code-bg: #27241c;
+  --syntax-comment: #c5bca4;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #27241c;
+  --table-hover: #493d26;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+  --document-bg: repeating-linear-gradient(transparent 0 29px,#b8d3fa0d 29px 30px),linear-gradient(90deg,transparent 17px,#e89b7222 17px 18px,transparent 18px),var(--surface);
+}

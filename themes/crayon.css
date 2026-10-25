@@ -1,0 +1,95 @@
+/* Crayon. Traço de giz de cera, textura de papel, cores e hover rabiscado.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Kalam";
+  src: url("../assets/fonts/kalam-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Kalam";
+  src: url("../assets/fonts/kalam-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Kalam", cursive;
+  --hero-weight: 700;
+  --heading-weight: 700;
+  --hero-tracking: -.03em;
+  --heading-tracking: -.02em;
+  --radius: 16px 5px 20px 7px;
+  --radius-md: 6px 16px 7px 12px;
+  --radius-control: 8px 3px 10px 4px;
+  --radius-sm: 4px 7px 3px 8px;
+  --radius-media: 8px;
+  --panel-edge-mask: url("resources/sketch-frame.svg");
+  --panel-edge-opacity: .85;
+  --panel-border-width: 0px;
+  --panel-overlay: url("resources/grain.svg");
+  --panel-overlay-size: 180px 180px;
+  --hero-ornament: linear-gradient(90deg,#dfb142 0 32%,#d25686 32% 67%,#477ea7 67%);
+  --hero-ornament-height: 10px;
+  --hero-ornament-space: 15px;
+  --hero-ornament-mask: url("resources/brush.svg");
+  --selected-radius: 13px 4px 10px 3px;
+  --selected-transform: rotate(-.7deg);
+  --selected-border: var(--accent);
+  --selected-sheen: linear-gradient(90deg,transparent,var(--accent-soft));
+  --selected-sheen-opacity: .7;
+  --selected-animation: reader-marker .32s ease-out 1;
+  --hover-animation: reader-chalk .28s ease-out 1;
+  --hover-bg: var(--accent-soft);
+  --hover-border: var(--accent);
+  --hover-shadow: 2px 3px 0 var(--line);
+  --duration: 180ms;
+}
+html[data-theme="light"] {
+  --bg: #faf5e8;
+  --surface: #fffcf4;
+  --surface-2: #eee9da;
+  --text: #302b29;
+  --muted: #60574b;
+  --subtle: #6a5d4d;
+  --line: #d6c6a6;
+  --accent: #285d79;
+  --accent-soft: #e0edf1;
+  --accent-strong: #17435c;
+  --code-bg: #eee9dc;
+  --syntax-comment: #60574b;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #eee9dc;
+  --table-hover: #e0edf1;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #24201b;
+  --surface: #302b23;
+  --surface-2: #40382c;
+  --text: #f6edde;
+  --muted: #d1c0a7;
+  --subtle: #c3b296;
+  --line: #61513a;
+  --accent: #9ed7e9;
+  --accent-soft: #34443f;
+  --accent-strong: #c5efff;
+  --code-bg: #2b261e;
+  --syntax-comment: #d1c0a7;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #2b261e;
+  --table-hover: #34443f;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

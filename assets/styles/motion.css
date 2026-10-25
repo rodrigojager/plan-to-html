@@ -1,0 +1,19 @@
+/* Motion */
+body, .topbar, .sidebar, .panel, .enhancement, .code-block, .table-wrap,
+button, input, select, a, .target-highlight {
+  transition: background-color var(--duration), color var(--duration), border-color var(--duration), box-shadow var(--duration), transform var(--duration);
+}
+dialog[open], details[open] > :not(summary) { animation: reader-enter var(--duration) ease-out; }
+@keyframes reader-enter {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,*:before,*:after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

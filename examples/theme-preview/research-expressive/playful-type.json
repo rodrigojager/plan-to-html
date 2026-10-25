@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"name\": \"Playful Rounded\",\n    \"style\": \"playful\",\n    \"display_font\": {\n      \"name\": \"Nunito\",\n      \"weights\": \"700;900\",\n      \"type\": \"sans-serif\"\n    },\n    \"body_font\": {\n      \"name\": \"Nunito\",\n      \"weights\": \"400;500\",\n      \"type\": \"sans-serif\"\n    },\n    \"google_import\": \"@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap');\",\n    \"css_usage\": \"h1, h2 { font-family: 'Nunito', sans-serif; font-weight: 900; letter-spacing: -0.02em; }\\nbody { font-family: 'Nunito', sans-serif; font-weight: 400; line-height: 1.7; }\",\n    \"character\": \"Friendly, approachable, and fun. Great for consumer apps, children's products.\",\n    \"style_tags\": [\n      \"playful\",\n      \"rounded\",\n      \"friendly\",\n      \"consumer\"\n    ]\n  }\n]"
+    }
+  ]
+}

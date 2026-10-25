@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="670" viewBox="0 0 1100 670">
+<rect width="1100" height="670" rx="18" fill="#f1f4f0"/>
+<rect x="35" y="35" width="1030" height="600" rx="14" fill="#fff" stroke="#d5dfd5"/>
+<path d="M35 104h1030M258 104v531M893 104v531" fill="none" stroke="#dce4dc"/>
+<rect x="58" y="56" width="29" height="29" rx="8" fill="#e4f2e9"/><path d="M65 64h14v13H65z" fill="none" stroke="#296246"/>
+<text x="99" y="75" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" fill="#23382b">Caderno de plano</text>
+<rect x="743" y="57" width="194" height="28" rx="7" fill="#f4f6f3" stroke="#dce4dc"/>
+<text x="756" y="75" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#6e8072">Buscar no plano...</text>
+<rect x="966" y="58" width="60" height="26" rx="13" fill="#e9f0e9"/><circle cx="980" cy="71" r="10" fill="#fff"/>
+<text x="63" y="144" font-family="Segoe UI,Arial,sans-serif" font-size="9" letter-spacing="2" fill="#6c7f71">SEU PLANO</text>
+<text x="63" y="173" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#243b2c">Plano de conversão</text>
+<rect x="53" y="216" width="190" height="47" rx="8" fill="#e5f3e9"/>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#4e6856"><text x="67" y="243">01  Visão geral</text><text x="67" y="294">02  Experiência de leitura</text><text x="67" y="343">03  Conversão e recursos</text><text x="67" y="392">04  Decisões de arquitetura</text></g>
+<text x="301" y="149" font-family="Segoe UI,Arial,sans-serif" font-size="9" letter-spacing="2" fill="#62816b">VISÃO GERAL</text>
+<text x="300" y="208" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="600" letter-spacing="-1.5" fill="#233b2b">Plano de conversão</text>
+<text x="302" y="245" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6b7e70">Arquivos Markdown, geração do HTML e recursos de leitura.</text>
+<g fill="#eff4ee" stroke="#dce5db"><rect x="302" y="281" width="168" height="70" rx="9"/><rect x="484" y="281" width="168" height="70" rx="9"/><rect x="666" y="281" width="183" height="70" rx="9"/></g>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#355b40"><text x="319" y="321" font-size="23">04</text><text x="359" y="319" font-size="10">documentos</text><text x="500" y="321" font-size="23">02</text><text x="540" y="319" font-size="10">temas</text><text x="683" y="321" font-size="23">02</text><text x="722" y="319" font-size="10">referências</text></g>
+<text x="302" y="409" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#2a4233">Problema</text>
+<g fill="#e3eae1"><rect x="302" y="433" width="515" height="7" rx="3"/><rect x="302" y="452" width="540" height="7" rx="3"/><rect x="302" y="471" width="436" height="7" rx="3"/></g>
+<rect x="302" y="515" width="547" height="80" rx="9" fill="#eaf4ed"/><text x="320" y="547" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#315e40">Fonte: PLAN.md</text><text x="320" y="572" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#5c7865">O gerador preserva o conteúdo dos arquivos Markdown.</text>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#6e8374"><text x="915" y="145">NESTA PÁGINA</text><text x="915" y="180">Problema</text><text x="915" y="210">Solução</text><text x="915" y="240">Casos de uso</text><text x="915" y="270">Referências</text><text x="915" y="300">Decisões</text></g>
+</svg>

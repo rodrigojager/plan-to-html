@@ -1,0 +1,76 @@
+/* Caderno. Leitura serifada, fundo neutro e acento ocre.
+ * Reference: design-inspiration-mcp / notion. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Serif";
+  src: url("../assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan Serif", Georgia, serif;
+  --font-reading: "Plan Serif", Georgia, serif;
+  --hero-weight: 600;
+  --hero-tracking: -.025em;
+  --heading-tracking: -.015em;
+  --radius: 3px;
+  --radius-md: 3px;
+  --radius-control: 3px;
+  --radius-sm: 2px;
+  --radius-media: 3px;
+  --quote-border-width: 2px;
+}
+html[data-theme="light"] {
+  --bg: #faf9f5;
+  --surface: #ffffff;
+  --surface-2: #eeece5;
+  --text: #2c2922;
+  --muted: #625e53;
+  --subtle: #6a6458;
+  --line: #ddd9cf;
+  --accent: #73511b;
+  --accent-soft: #f1e8d7;
+  --accent-strong: #553a10;
+  --code-bg: #f0eee7;
+  --syntax-comment: #625e53;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #f0eee7;
+  --table-hover: #f1e8d7;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #22211d;
+  --surface: #2c2b25;
+  --surface-2: #39362e;
+  --text: #ede9dc;
+  --muted: #c8c0ad;
+  --subtle: #bdb49f;
+  --line: #504b3d;
+  --accent: #e1c590;
+  --accent-soft: #4a3e27;
+  --accent-strong: #f7dfb4;
+  --code-bg: #26251f;
+  --syntax-comment: #c8c0ad;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #26251f;
+  --table-hover: #4a3e27;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

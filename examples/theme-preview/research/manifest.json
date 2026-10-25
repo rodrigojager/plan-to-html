@@ -1,0 +1,196 @@
+{
+  "repository": "https://github.com/notsointresting/design-inspiration-mcp",
+  "commit": "817716d983513147cc06611c3e4d6073f912e93f",
+  "tool_count": 28,
+  "calls": [
+    {
+      "id": "brands",
+      "tool": "browse_brand_designs",
+      "arguments": {},
+      "isError": false,
+      "characters": 743
+    },
+    {
+      "id": "claude",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "claude"
+      },
+      "isError": false,
+      "characters": 21290
+    },
+    {
+      "id": "linear.app",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "linear.app"
+      },
+      "isError": false,
+      "characters": 23654
+    },
+    {
+      "id": "ibm",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "ibm"
+      },
+      "isError": false,
+      "characters": 20595
+    },
+    {
+      "id": "mintlify",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "mintlify"
+      },
+      "isError": false,
+      "characters": 18501
+    },
+    {
+      "id": "stripe",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "stripe"
+      },
+      "isError": false,
+      "characters": 21642
+    },
+    {
+      "id": "notion",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "notion"
+      },
+      "isError": false,
+      "characters": 19480
+    },
+    {
+      "id": "airbnb",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "airbnb"
+      },
+      "isError": false,
+      "characters": 14885
+    },
+    {
+      "id": "framer",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "framer"
+      },
+      "isError": false,
+      "characters": 18340
+    },
+    {
+      "id": "superhuman",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "superhuman"
+      },
+      "isError": false,
+      "characters": 19718
+    },
+    {
+      "id": "apple",
+      "tool": "browse_brand_designs",
+      "arguments": {
+        "brand": "apple"
+      },
+      "isError": false,
+      "characters": 21489
+    },
+    {
+      "id": "editorial-type",
+      "tool": "get_typography_pairings",
+      "arguments": {
+        "style": "editorial",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 2583
+    },
+    {
+      "id": "academic-type",
+      "tool": "get_typography_pairings",
+      "arguments": {
+        "style": "academic",
+        "count": 2
+      },
+      "isError": false,
+      "characters": 845
+    },
+    {
+      "id": "tech-type",
+      "tool": "get_typography_pairings",
+      "arguments": {
+        "style": "modern tech",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 798
+    },
+    {
+      "id": "earth-palettes",
+      "tool": "get_color_palettes",
+      "arguments": {
+        "mood": "earthy organic",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 967
+    },
+    {
+      "id": "mono-palettes",
+      "tool": "get_color_palettes",
+      "arguments": {
+        "mood": "monochrome",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 985
+    },
+    {
+      "id": "corporate-palettes",
+      "tool": "get_color_palettes",
+      "arguments": {
+        "mood": "corporate trust",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 990
+    },
+    {
+      "id": "pastel-palettes",
+      "tool": "get_color_palettes",
+      "arguments": {
+        "mood": "soft pastel",
+        "count": 3
+      },
+      "isError": false,
+      "characters": 1928
+    },
+    {
+      "id": "contrast-guide",
+      "tool": "get_accessibility_guide",
+      "arguments": {
+        "component": "contrast",
+        "level": "AA"
+      },
+      "isError": false,
+      "characters": 1604
+    },
+    {
+      "id": "type-tokens",
+      "tool": "generate_design_tokens",
+      "arguments": {
+        "brand_color": "#315da5",
+        "mode": "light",
+        "rounding": "minimal",
+        "transitions": "snappy"
+      },
+      "isError": false,
+      "characters": 7074
+    }
+  ]
+}

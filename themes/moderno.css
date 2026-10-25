@@ -1,0 +1,93 @@
+/* Moderno. Vidro fosco, luz ambiente, profundidade e hover flutuante.
+ * Reference: design-inspiration-mcp / expressive-materials. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan DM";
+  src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --font-heading: "Plan DM", sans-serif;
+  --hero-weight: 600;
+  --heading-weight: 600;
+  --hero-tracking: -.055em;
+  --radius: 25px;
+  --radius-md: 18px;
+  --radius-control: 14px;
+  --radius-sm: 8px;
+  --radius-media: 18px;
+  --chrome-blur: blur(18px);
+  --page-texture: radial-gradient(ellipse at 85% 0,color-mix(in srgb,var(--accent) 10%,transparent),transparent 52%),radial-gradient(ellipse at 8% 70%,#a778d90d,transparent 50%);
+  --page-texture-size: 100vw 1100px;
+  --selected-border: color-mix(in srgb,var(--accent) 60%,var(--line));
+  --selected-shadow: 0 3px 12px color-mix(in srgb,var(--accent) 14%,transparent);
+  --hover-transform: translateY(-3px);
+  --hover-shadow: 0 8px 20px color-mix(in srgb,var(--accent) 18%,transparent);
+  --hover-bg: var(--accent-soft);
+  --duration: 260ms;
+  --press-transform: translateY(1px);
+}
+html[data-theme="light"] {
+  --bg: #f1f6fa;
+  --surface: #fcfeff;
+  --surface-2: #e1ecf3;
+  --text: #162d3f;
+  --muted: #465e70;
+  --subtle: #51677a;
+  --line: #c9dce9;
+  --accent: #135478;
+  --accent-soft: #d9eaf4;
+  --accent-strong: #0a3c59;
+  --code-bg: #e5eef4;
+  --syntax-comment: #465e70;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #e5eef4;
+  --table-hover: #d9eaf4;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: 0 12px 35px #263e5f0c,inset 0 1px #ffff;
+  --panel-bg: linear-gradient(130deg,#ffffffed,#f5faffec);
+  --chrome-bg: #f1f6faed;
+}
+html[data-theme="dark"] {
+  --bg: #0d1724;
+  --surface: #172538;
+  --surface-2: #23354b;
+  --text: #eaf4ff;
+  --muted: #b6cbe0;
+  --subtle: #a9bdd5;
+  --line: #3a506b;
+  --accent: #a2d7ff;
+  --accent-soft: #293e56;
+  --accent-strong: #d4edff;
+  --code-bg: #111d2d;
+  --syntax-comment: #b6cbe0;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #111d2d;
+  --table-hover: #293e56;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: 0 14px 36px #0003,inset 0 1px #b6d8ff12;
+  --panel-bg: linear-gradient(130deg,#1b2c42,#142337);
+  --chrome-bg: #0d1724ed;
+}

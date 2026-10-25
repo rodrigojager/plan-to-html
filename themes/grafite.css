@@ -1,0 +1,58 @@
+/* Grafite. Cinzas neutros, títulos compactos e bordas finas.
+ * Reference: design-inspiration-mcp / linear.app. Adapted for this reader.
+ */
+:root {
+  --hero-weight: 600;
+  --hero-tracking: -.05em;
+  --radius: 12px;
+  --radius-md: 8px;
+  --radius-control: 6px;
+  --radius-sm: 4px;
+  --radius-media: 8px;
+}
+html[data-theme="light"] {
+  --bg: #f6f6f7;
+  --surface: #ffffff;
+  --surface-2: #ebebee;
+  --text: #24252a;
+  --muted: #585b64;
+  --subtle: #62656e;
+  --line: #d8d9df;
+  --accent: #3d415e;
+  --accent-soft: #e6e7ef;
+  --accent-strong: #292d47;
+  --code-bg: #eeeff2;
+  --syntax-comment: #585b64;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #eeeff2;
+  --table-hover: #e6e7ef;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #101113;
+  --surface: #191a1d;
+  --surface-2: #24262b;
+  --text: #f0f1f4;
+  --muted: #b3b6c1;
+  --subtle: #a5a9b5;
+  --line: #36383f;
+  --accent: #c0c5ff;
+  --accent-soft: #303247;
+  --accent-strong: #e2e4ff;
+  --code-bg: #141518;
+  --syntax-comment: #b3b6c1;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #141518;
+  --table-hover: #303247;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}

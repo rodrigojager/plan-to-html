@@ -1,0 +1,4 @@
+interface:
+  display_name: "plan-to-html"
+  short_description: "Transforme planos Markdown em uma leitura visual rica"
+  default_prompt: "Use $plan-to-html para converter este plano Markdown em HTML interativo com modo claro e escuro, preservando os títulos e usando explicações concisas, sem slogans."

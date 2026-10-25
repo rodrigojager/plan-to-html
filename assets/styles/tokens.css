@@ -1,0 +1,17 @@
+/* Geometry, type, and reading defaults; independent of the color theme. */
+:root {
+  --radius: 18px;
+  --header-h: 78px;
+  --sidebar-w: 258px;
+  --toc-w: 214px;
+  --font: "Plan Inter","Segoe UI Variable","Segoe UI",system-ui,-apple-system,sans-serif;
+  --mono: "Plan Mono","SFMono-Regular",Consolas,monospace;
+}
+:root {
+  --reading-font-size: 15px;
+  --reading-line-height: 1.85;
+  --reading-width: 1024px;
+  --duration: 180ms;
+}
+html[data-theme="light"] { color-scheme: light; }
+html[data-theme="dark"] { color-scheme: dark; }

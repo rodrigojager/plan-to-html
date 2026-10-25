@@ -1,0 +1,32 @@
+/* Optional partial theme. Missing variables inherit the default palette. */
+:root {
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --surface-2: #eaf0f7;
+  --text: #222e40;
+  --muted: #56657a;
+  --subtle: #66788e;
+  --line: #d6e0ee;
+  --accent: #315da5;
+  --accent-soft: #e3edfd;
+  --accent-strong: #224376;
+  --code-bg: #edf2f9;
+  --table-stripe: #f2f5fa;
+  --table-hover: #e6eefb;
+  --radius: 14px;
+}
+html[data-theme="dark"] {
+  --bg: #121923;
+  --surface: #192333;
+  --surface-2: #202e41;
+  --text: #e4ecf7;
+  --muted: #b3c1d4;
+  --subtle: #93a7c1;
+  --line: #33455f;
+  --accent: #a4c7ff;
+  --accent-soft: #263c5f;
+  --accent-strong: #cfE0ff;
+  --code-bg: #141e2c;
+  --table-stripe: #1c293b;
+  --table-hover: #263c56;
+}

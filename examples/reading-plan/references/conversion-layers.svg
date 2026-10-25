@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+<rect width="1000" height="420" rx="18" fill="#15221b"/>
+<text x="50" y="64" font-family="Segoe UI,Arial,sans-serif" font-size="11" letter-spacing="2" fill="#94b59d">ETAPAS DA CONVERSÃO</text>
+<text x="49" y="108" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="600" fill="#eaf2ec">Markdown → Python → HTML</text>
+<g stroke="#3a5544" fill="#1e3225"><rect x="50" y="162" width="260" height="190" rx="13"/><rect x="370" y="162" width="260" height="190" rx="13"/><rect x="690" y="162" width="260" height="190" rx="13"/></g>
+<g font-family="Segoe UI,Arial,sans-serif"><g font-size="11" fill="#9ccfac"><text x="72" y="195">01 / FONTE</text><text x="392" y="195">02 / CONVERSÃO</text><text x="712" y="195">03 / SAÍDA</text></g><g font-size="22" font-weight="600" fill="#eaf2ec"><text x="72" y="239">Markdown</text><text x="392" y="239">Python</text><text x="712" y="239">HTML</text></g><g font-size="12" fill="#b0c4b5"><text x="72" y="279">Texto, decisões e referências.</text><text x="72" y="303">Arquivos editáveis em texto.</text><text x="392" y="279">Estrutura, links e componentes.</text><text x="392" y="303">Execução por comando.</text><text x="712" y="279">Navegação, busca e visuais.</text><text x="712" y="303">Busca, temas e navegação.</text></g></g>
+<path d="M322 255h35m-8-7 8 7-8 7M642 255h35m-8-7 8 7-8 7" stroke="#a9d6b6" stroke-width="2" fill="none"/>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  \"airbnb\",\n  \"airtable\",\n  \"apple\",\n  \"bmw\",\n  \"cal\",\n  \"claude\",\n  \"clay\",\n  \"clickhouse\",\n  \"cohere\",\n  \"coinbase\",\n  \"composio\",\n  \"cursor\",\n  \"elevenlabs\",\n  \"expo\",\n  \"ferrari\",\n  \"figma\",\n  \"framer\",\n  \"hashicorp\",\n  \"ibm\",\n  \"intercom\",\n  \"kraken\",\n  \"lamborghini\",\n  \"linear.app\",\n  \"lovable\",\n  \"minimax\",\n  \"mintlify\",\n  \"miro\",\n  \"mistral.ai\",\n  \"mongodb\",\n  \"notion\",\n  \"nvidia\",\n  \"ollama\",\n  \"opencode.ai\",\n  \"pinterest\",\n  \"posthog\",\n  \"raycast\",\n  \"renault\",\n  \"replicate\",\n  \"resend\",\n  \"revolut\",\n  \"runwayml\",\n  \"sanity\",\n  \"sentry\",\n  \"spacex\",\n  \"spotify\",\n  \"stripe\",\n  \"supabase\",\n  \"superhuman\",\n  \"tesla\",\n  \"together.ai\",\n  \"uber\",\n  \"vercel\",\n  \"voltagent\",\n  \"warp\",\n  \"webflow\",\n  \"wise\",\n  \"x.ai\",\n  \"zapier\"\n]"
+    }
+  ]
+}

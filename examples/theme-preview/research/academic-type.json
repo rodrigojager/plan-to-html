@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"name\": \"Academic Gravitas\",\n    \"style\": \"academic\",\n    \"display_font\": {\n      \"name\": \"Libre Baskerville\",\n      \"weights\": \"400;700\",\n      \"type\": \"serif\"\n    },\n    \"body_font\": {\n      \"name\": \"Libre Franklin\",\n      \"weights\": \"300;400;500\",\n      \"type\": \"sans-serif\"\n    },\n    \"google_import\": \"@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Libre+Franklin:wght@300;400;500&display=swap');\",\n    \"css_usage\": \"h1, h2 { font-family: 'Libre Baskerville', serif; font-weight: 700; }\\nbody { font-family: 'Libre Franklin', sans-serif; font-weight: 400; line-height: 1.75; }\",\n    \"character\": \"Trustworthy and scholarly. Perfect for research platforms, publishing, education.\",\n    \"style_tags\": [\n      \"academic\",\n      \"education\",\n      \"research\",\n      \"editorial\"\n    ]\n  }\n]"
+    }
+  ]
+}

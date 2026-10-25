@@ -1,0 +1,101 @@
+/* Navigation */
+.toc-rail {
+  min-width: 0;
+  padding: 49px 24px 0 10px;
+}
+.toc-inner {
+  position: sticky;
+  top: 116px;
+  max-height: calc(100dvh - 160px);
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.toc-inner>.eyebrow {
+  font-size: 9px;
+}
+#toc {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#toc a {
+  display: block;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+  padding: 5px 0 5px 12px;
+  border-left: 1px solid var(--line);
+}
+#toc a.toc-deep {
+  padding-left: 23px;
+  font-size: 9px;
+}
+#toc a.active {
+  color: var(--accent);
+  border-left: 2px solid var(--accent);
+  padding-left: 11px;
+}
+#toc a.active.toc-deep {
+  padding-left: 22px;
+}
+#toc a:hover {
+  color: var(--text);
+}
+.toc-progress {
+  margin-top: 34px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--muted);
+  gap: 10px;
+}
+.toc-progress strong {
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+.toc-progress>div {
+  height: 3px;
+  background: var(--line);
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.toc-progress>div>span {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  display: block;
+}
+.end-card {
+  border-top: 1px solid var(--line);
+  margin-top: 52px;
+  padding-top: 28px;
+  display: flex;
+  gap: 18px;
+  align-items: start;
+}
+.end-symbol {
+  color: var(--accent);
+  font-size: 28px;
+  line-height: 1.4;
+}
+.end-card h2 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+.end-card p {
+  font-size: 10px;
+  color: var(--muted);
+  margin: 0;
+  max-width: 400px;
+}
+.end-card>a {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 10px;
+  padding-top: 4px;
+}

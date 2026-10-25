@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="@@LANG@@" data-accent="@@ACCENT@@">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>@@TITLE@@ · Plan HTML</title>
+<script>
+try{document.documentElement.dataset.theme=localStorage.getItem('planhtml:theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
+try{const p=JSON.parse(localStorage.getItem('planhtml:reading')||'{}'),s=document.documentElement.style;if(Number.isFinite(p.size))s.setProperty('--reading-font-size',Math.min(22,Math.max(13,p.size))+'px');if(Number.isFinite(p.spacing))s.setProperty('--reading-line-height',Math.min(2.2,Math.max(1.5,p.spacing)));if(['800px','1024px','1280px'].includes(p.width))s.setProperty('--reading-width',p.width)}catch(e){}
+</script>
+@@STYLESHEETS@@
+</head>
+<body>
+<a class="skip-link" href="#main">@@L_SKIP@@</a>
+<div class="reading-progress" aria-hidden="true"><div id="reading-progress"></div></div>
+<header class="topbar">
+  <div class="topbar-brand"><button class="icon-button mobile-menu" id="menu-toggle" type="button" aria-label="@@L_MENU@@" aria-expanded="false" aria-controls="sidebar">@@MENU_ICON@@</button><a class="brand" href="#overview"><span class="brand-mark">@@BOOK_ICON@@</span><span>@@BRAND@@<small>PLAN / READER</small></span></a></div>
+  <div class="topbar-actions"><button class="search-trigger" type="button" data-open-search>@@SEARCH_ICON@@<span>@@L_SEARCH@@</span><kbd>Ctrl K</kbd></button><span class="toolbar-divider"></span><button class="icon-button reading-settings-button" id="reading-settings" type="button" aria-label="@@L_SETTINGS@@" title="@@L_SETTINGS@@"><span aria-hidden="true">Aa</span></button><button class="icon-button" id="focus-toggle" type="button" aria-label="@@L_FOCUS@@" title="@@L_FOCUS@@" aria-pressed="false">@@FOCUS_ICON@@</button><button class="icon-button print-button" type="button" id="print-button" aria-label="@@L_PRINT@@" title="@@L_PRINT@@">@@PRINT_ICON@@</button><button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="@@L_THEME@@"><span class="sun">@@SUN_ICON@@</span><span class="moon">@@MOON_ICON@@</span><span class="theme-thumb"></span></button></div>
+</header>
+<button class="nav-backdrop" id="nav-backdrop" aria-label="@@L_CLOSE@@" hidden></button>
+<div class="app-layout">
+<aside class="sidebar" id="sidebar" aria-label="@@L_NAVIGATION@@"><div class="sidebar-intro"><span class="eyebrow">@@L_READING@@</span><h2>@@TITLE@@</h2><span class="reading-time">@@READ_TIME@@ @@L_READ@@</span></div><nav><a class="overview-link" href="#overview">@@L_OVERVIEW@@<span>↗</span></a><div class="nav-label">@@L_DOCUMENTS@@</div><div class="doc-navigation">@@NAV@@</div></nav><div class="sidebar-footer"><span class="status-dot"></span>Markdown → HTML<span class="footer-note">@@L_SOURCE_NOTE@@</span></div></aside>
+<main id="main"><div class="content-column"><section class="hero" id="overview"><h1>@@TITLE@@</h1><div class="hero-bottom"><a class="start-link" href="#@@START_ID@@">@@L_START@@ @@ARROW_ICON@@</a><span class="hero-readtime">@@READ_TIME@@ @@L_READ@@</span></div><div class="stats">@@STATS@@</div></section>
+@@READING_MAP@@
+@@VISUALS@@
+<div class="documents">@@ARTICLES@@</div>
+@@GALLERY@@
+<footer class="end-card"><span class="end-symbol">✳</span><div><h2>@@L_DONE@@</h2><p>@@L_DONE_HINT@@</p></div><a href="#overview">@@L_TOP@@ ↑</a></footer>
+</div></main>
+<aside class="toc-rail" aria-label="@@L_TOC@@"><div class="toc-inner"><span class="eyebrow">@@L_TOC@@</span><div id="toc"></div><div class="toc-progress"><span>@@L_READING@@</span><strong id="progress-label">0%</strong><div><span id="toc-progress-bar"></span></div></div></div></aside>
+</div>
+<dialog id="search-dialog" class="search-dialog" aria-label="@@L_SEARCH@@"><div class="search-input-row">@@SEARCH_ICON@@<input id="search-input" type="search" placeholder="@@L_SEARCH_HINT@@" aria-label="@@L_SEARCH@@" autocomplete="off"><button class="icon-button" type="button" data-close-dialog="search-dialog" aria-label="@@L_CLOSE@@">@@CLOSE_ICON@@</button></div><div id="search-results" class="search-results" aria-live="polite"></div><div class="search-footer"><span>↑ ↓ &nbsp; Enter</span><span>Esc · @@L_CLOSE@@</span></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-label="@@L_GALLERY@@"><div class="image-dialog-toolbar"><span id="image-title"></span><a id="image-download" class="image-download" download>@@L_DOWNLOAD@@ ↓</a><button class="icon-button" type="button" data-close-dialog="image-dialog" aria-label="@@L_CLOSE@@">@@CLOSE_ICON@@</button></div><div class="image-stage"><img id="zoom-image" alt=""></div></dialog>
+<dialog id="reading-dialog" class="reading-dialog" aria-labelledby="reading-title">
+  <div class="dialog-heading"><h2 id="reading-title">@@L_SETTINGS@@</h2><button class="icon-button" type="button" data-close-dialog="reading-dialog" aria-label="@@L_CLOSE@@">@@CLOSE_ICON@@</button></div>
+  <div class="reading-controls"><label for="reading-size">@@L_FONT_SIZE@@ <output id="reading-size-value" for="reading-size"></output></label><input id="reading-size" type="range" min="13" max="22" step="1">
+  <label for="reading-spacing">@@L_LINE_HEIGHT@@ <output id="reading-spacing-value" for="reading-spacing"></output></label><input id="reading-spacing" type="range" min="1.5" max="2.2" step="0.05">
+  <label for="reading-width">@@L_WIDTH@@</label><select id="reading-width"><option value="800px">@@L_NARROW@@</option><option value="1024px">@@L_STANDARD@@</option><option value="1280px">@@L_WIDE@@</option></select>
+  <button id="reading-reset" type="button">@@L_RESET@@</button></div>
+</dialog>
+<dialog id="diagram-dialog" class="diagram-dialog" aria-label="@@L_EXPAND@@"><div class="dialog-heading"><span>@@L_DIAGRAM_HELP@@</span><button class="icon-button" type="button" data-close-dialog="diagram-dialog" aria-label="@@L_CLOSE@@">@@CLOSE_ICON@@</button></div><div id="diagram-stage"></div></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<script id="plan-data" type="application/json">@@PAYLOAD@@</script>
+<script id="font-licenses" type="application/json">@@FONT_LICENSES@@</script>
+@@SCRIPTS@@
+</body>
+</html>

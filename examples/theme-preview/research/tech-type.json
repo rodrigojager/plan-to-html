@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"name\": \"Modern Geometric\",\n    \"style\": \"modern tech\",\n    \"display_font\": {\n      \"name\": \"DM Sans\",\n      \"weights\": \"400;500;700\",\n      \"type\": \"sans-serif\"\n    },\n    \"body_font\": {\n      \"name\": \"DM Sans\",\n      \"weights\": \"300;400\",\n      \"type\": \"sans-serif\"\n    },\n    \"google_import\": \"@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');\",\n    \"css_usage\": \"h1 { font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: -0.04em; }\\nbody { font-family: 'DM Sans', sans-serif; font-weight: 400; line-height: 1.6; }\",\n    \"character\": \"Clean, geometric, modern. The font of choice for serious SaaS and developer tools.\",\n    \"style_tags\": [\n      \"modern tech\",\n      \"saas\",\n      \"developer\",\n      \"clean\"\n    ]\n  }\n]"
+    }
+  ]
+}

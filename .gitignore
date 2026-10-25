@@ -1,0 +1,8 @@
+.vendor/
+__pycache__/
+*.pyc
+.test-output/
+*.bundle.json
+*.manifest.json
+/work/
+/output/

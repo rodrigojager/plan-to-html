@@ -1,0 +1,77 @@
+/* Carbono. Plex Sans, cantos retos e azul técnico.
+ * Reference: design-inspiration-mcp / ibm. Adapted for this reader.
+ */
+@font-face {
+  font-family: "Plan Plex";
+  src: url("../assets/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plan Plex";
+  src: url("../assets/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+:root {
+  --font: "Plan Plex", "Plan Inter", sans-serif;
+  --font-heading: "Plan Plex", sans-serif;
+  --heading-weight: 400;
+  --hero-weight: 400;
+  --heading-tracking: -.015em;
+  --hero-tracking: -.035em;
+  --radius: 0px;
+  --radius-md: 0px;
+  --radius-control: 0px;
+  --radius-sm: 0px;
+  --radius-media: 0px;
+  --quote-border-width: 2px;
+}
+html[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: #f4f4f4;
+  --surface-2: #e8e8e8;
+  --text: #161616;
+  --muted: #525252;
+  --subtle: #606060;
+  --line: #c6c6c6;
+  --accent: #0043ce;
+  --accent-soft: #e1eaff;
+  --accent-strong: #002d9c;
+  --code-bg: #ededed;
+  --syntax-comment: #525252;
+  --syntax-keyword: #792b83;
+  --syntax-string: #175d39;
+  --syntax-number: #82400e;
+  --syntax-name: #20518a;
+  --table-stripe: #ededed;
+  --table-hover: #e1eaff;
+  --shadow: 0 16px 55px #1c25351a;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
+html[data-theme="dark"] {
+  --bg: #161616;
+  --surface: #262626;
+  --surface-2: #333333;
+  --text: #f4f4f4;
+  --muted: #c6c6c6;
+  --subtle: #b1b1b1;
+  --line: #525252;
+  --accent: #a6c8ff;
+  --accent-soft: #263954;
+  --accent-strong: #d0e2ff;
+  --code-bg: #1c1c1c;
+  --syntax-comment: #c6c6c6;
+  --syntax-keyword: #deb1ee;
+  --syntax-string: #a8d4ae;
+  --syntax-number: #f0c192;
+  --syntax-name: #add0f6;
+  --table-stripe: #1c1c1c;
+  --table-hover: #263954;
+  --shadow: 0 16px 55px #0005;
+  --panel-shadow: none;
+  --panel-bg: var(--surface);
+}
