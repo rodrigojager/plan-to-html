@@ -16,6 +16,15 @@ Create a beautiful, usable reading experience from an existing plan. Markdown re
 - Visual titles should name their subject directly, such as "Conversion flow", "Dependencies", or "Duration by stage". Prefer the source section title when it already identifies the subject. Use short factual sentences for explanations; visual polish comes from layout and interaction.
 - Preserve the user's source prose even when its style differs. These rules govern text added by this skill; rewriting the plan requires a separate user instruction.
 
+## Where files go
+
+The generated files (outline, enhancements, editable build, packaged HTML) are work artifacts: never write them into the product repository or beside the source plan there.
+
+- Inside a jproject container (its work folder, usually `_work/`, holds a `WORKSPACE.md` whose front matter has `jproject: 1`; resolve the paths with `jproject root --json` or by reading `_work/WORKSPACE.md`), the output folder is `_work/10-docs/_render/<name>/`, where `<name>` is the plan's kebab-case name (`plan` for `_work/30-plan/PLAN.md`). Everything there is regenerable from the Markdown.
+- Outside a container, ask the user where to save the output before building.
+
+The relative output paths below (`outline.json`, `enhancements.json`, `work/plan.html`, `plan.html`) are inside that output folder.
+
 ## Workflow
 
 Resolve this skill's own directory as `SKILL_DIR`; commands below use paths relative to it. Requires Python 3.10+. If dependencies are absent, run `python "SKILL_DIR/scripts/setup.py"` once. The setup installs isolated dependencies, local reading/theme fonts and licenses, and a pinned Mermaid browser bundle; subsequent builds work offline.
